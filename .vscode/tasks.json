@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        // 1. DEVELOPMENT (e.g., Run local server, npm start, python main.py)
+        {
+            "label": "Development",
+            "type": "shell",
+            "command": "echo 'Replace with dev command (e.g., npm run dev)'",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": "none"
+        },
+        // 2. TEST (e.g., Unit tests, jest, pytest)
+        {
+            "label": "Test",
+            "type": "shell",
+            "command": "echo 'Replace with test command (e.g., npm test)'",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        // Deploy
+        {
+            "label": "Deploy",
+            "type": "shell",
+            "command": "./deploy.sh",
+            "windows": {
+                "command": ".\\deploy.sh"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            // Optional: Force a build before deploying
+            // "dependsOn": "Build" 
+        }
+    ]
+}
